@@ -1,20 +1,22 @@
 $(document).ready(function() {
-  $("form#quiz").submit(function(event) {
-    debugger;
-    var first = parseFloat($("input#firstside").val());
-    var second = parseFloat($("input#secondside").val());
-    var third = parseFloat($("input#thirdside").val());
+  $("form#triangleSidesLength").submit(function(event) {
 
-    if (age <= 40 && gender === "female") {
-        $(".Tom").show();
-    } else if (age > 40 && gender === "female") {
-        $(".Pacino").show();
-    } else if ((age <= 40) && (gender === "male")) {
-        $(".Rachel").show();
-    } else if (age > 40 && gender === "male") {
-        $(".Brigitte").show();
+    var l1 = parseFloat($("input#firstside").val());
+    var l2 = parseFloat($("input#secondside").val());
+    var l3 = parseFloat($("input#thirdside").val());
+    debugger;
+    if ( l1 + l2 <= l3 ||  l2 + l3 <=l1 || l3 + l1 <= l2 ) {
+      alert("if 1 work");
+        $("#notTriangle").show();
+    } else if ( l1 === l2 || l2 === l1 || l3 === l1 ){
+      alert("if 2 work");
+        $("#equilateral").show();
+
+    } else if (l1 != l2 && l2 != l3) {
+      alert("if 3 work");
+        $("#scalene").show();
     } else {
-        $(".Yoda").show();
+      $("#isosceles").show(); 
     }
     event.preventDefault();
 

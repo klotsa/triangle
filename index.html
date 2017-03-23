@@ -14,20 +14,31 @@
       <h1>Check Your Triangles!</h1>
       <form id="triangleSidesLength">
         <label for="firstside">Enter first side length</lanel><br>
-        <input id="firstside" type="text">
+        <input id="firstside" type="number">
         <label for="secondside">Enter second side length</lanel><br>
-        <input id="secondtside" type="text">
+        <input id="secondside" type="number">
         <label for="thirdside">Enter third side length</lanel><br>
-        <input id="thirdside" type="text">
+        <input id="thirdside" type="number">
 
         <button type="submit" class="btn">What type of a triangle is this?</button>
       </form>
-
-      <div id="results">
       </div>
-    </div>
 
+      <div id="notTriangle">
+        <h3>This is not a triangle!<h3>
+      </div>
 
+      <div id="equilateral">
+        <h3>This is a equilateral triangle!</h3>
+      </div>
+
+      <div id="isosceles">
+        <h3>This is a isosceles!</h3>
+      </div>
+
+      <div id="scalene">
+        <h3>This is a scalene trinangle!</h3>
+      </div>
 
     </div>
   </body>
