@@ -5,41 +5,44 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.0.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Check Your Triangle</title>
+    <title>Check Your Triangles!</title>
   </head>
 
   <body>
-    <div class="container">
+   <div class="container">
+    <div class="jumbotron">
+     <h1>Check Your Triangles!</h1>
+    </div>
       <div class="group-form">
-      <h1>Check Your Triangles!</h1>
-      <form id="triangleSidesLength">
-        <label for="firstside">Enter first side length</lanel><br>
+        <form id="triangleSidesLength">
+        <label for="firstside">Enter first side length:</label>
         <input id="firstside" type="number">
-        <label for="secondside">Enter second side length</lanel><br>
+        <label for="secondside">Enter second side length:</label>
         <input id="secondside" type="number">
-        <label for="thirdside">Enter third side length</lanel><br>
+        <label for="thirdside">Enter third side length:</label>
         <input id="thirdside" type="number">
-
+        <br><br><br>
         <button type="submit" class="btn">What type of a triangle is this?</button>
       </form>
+
       </div>
 
       <div id="notTriangle">
-        <h3>This is not a triangle!<h3>
+        <h3>This is not a triangle! You are trying to trick me!<h3>
       </div>
 
       <div id="equilateral">
-        <h3>This is a equilateral triangle!</h3>
+        <h3>This is an equilateral triangle:  All sides are equal</h3>
       </div>
 
       <div id="isosceles">
-        <h3>This is a isosceles!</h3>
+        <h3>This is an isosceles: Exactly 2 sides are equal</h3>
       </div>
 
       <div id="scalene">
-        <h3>This is a scalene trinangle!</h3>
+        <h3>This is a scalene trinangle: No sides are equal</h3>
       </div>
-
+      <img src="http://mathsrevision5.weebly.com/uploads/1/5/4/6/15463584/5308253_orig.jpg">
     </div>
   </body>
 </html>
